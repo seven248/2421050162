@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Bai 4</title>
+    </head>
+    <body>
+        <h1>Form tạo thông tin</h1>
+        <form>
+            <!-- Input nếu không truyền type thì type sẽ mặc định là text  -->
+           <div> <p><b>Họ và Tên</b></p>
+            <input type="text" name="hoVaTen"><br></div>
+            <div><p><b>Giới thiệu</b></p>
+                <textarea name="gioiThieu"></textarea></div>
+            <div>
+                <p><b>Email</b></p>
+                <input type="email" name="email"><br>
+            
+                <input type="submit">
+            </div>
+            <div>
+                <p><b>Số điện thoại</b></p>
+                <!-- Số đầu tiên: 0
+                Số tiếp theo: 9, 3, 6, 8
+                8 số cuối: 0-9 -->
+                <input name="soDienThoai"
+                type="tel"
+                placeholder="Dạng số 0123"
+                required
+                pattern="([0]{1})([9, 3, 6, 8]{1})([0-9]{8})"><br>
+                
+            <input type="submit"></div>
+            <div>
+                <p><b>Giới tính</b></p>
+                <input type="radio" name="gioitinh" value="male">Nam<br>
+                <input type="radio" name="gioitinh" value="female">Nữ<br>
+            <input type=submit></div>
+            <div>
+                <p><b>Sở thích</b></p>
+                Game:<input type="checkbox" name="soThich" value="game"><br>
+                Music:<input type="checkbox" name="soThich" value="music"><br>
+                Sport:<input type="checkbox" name="soThich" value="sport"><br>
+                <input type="submit"> 
+            </div>
+            <div>
+                <p><b>Trình duyệt web hay dùng</b></p>
+                <input list="browsers">
+                <datalist id="browsers">
+                    <option value="Chrome">
+                    <option value="Safari">
+                    <option value="Edge">
+                    <option value="Opera">
+                </datalist>
+                <select name="browsers">
+                    <option value="Chrome">Chrome</option>
+                    <option value="Safari">Safari</option>
+                    <option value="Edge">Edge</option>
+                    <option value="Opera">Opera</option>
+                </select>
+                <br><input type="submit">
+            </div>
+            <div>
+                0 <input type="range" id="a" value="50"> 100
+            </div>
+            <div>
+                <button>Click</button><br>
+                <input type="reset"><br>
+            </div>
+            <div>
+                <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/RChxQsvPTEs?si=OCXyw5flCiK4mRSS" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen></iframe>
+            </div>
+            <MARQUEE>
+                <img src="/anh/anh1.jpg">
+            </MARQUEE>
+            <audio controls>
+                <source src="/anh/nhạc1.mp3">
+            </audio>
+            <video controls>
+                <source src="/anh/vd1.mp4">
+            </video>
+            <div>
+                <input type="submit">
+            </div>
+
+        </form>
+    </body>
+</html>
