@@ -1,0 +1,13 @@
+h3{
+    color:green;
+}
+#tieuDe{
+    color:pink;
+}
+.tieuDe{
+    background-color:black;
+}
+h3.tieuDe{
+    color:blueviolet;
+    background-color:tomato;
+}
