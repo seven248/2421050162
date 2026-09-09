@@ -1,0 +1,42 @@
+h3{
+    color:red;
+    background-color:violet;
+}
+#hovaTen{
+    color:lightgreen;
+    background-color:red;
+}
+.maSV{
+    background-color:black;
+}
+p.maSV{
+    color:white;
+}
+.khoi1{
+    background-color:green;
+}
+.khoi2{
+    background-color:red;
+    /* 1 giá trị: cách đều xung quanh giá trị đó */
+    /* 2 giá trị: giá trị đầu (trên dưới), giá trị 2 (trái phải) */
+    /* 4 giá trị: giá trị 1 (trên), giá trị 2 (phải), giá trị 3 (dưới), giá trị 4 (trái) */
+    margin: 50px 200px 10px 100px;
+    /* giống margin */
+    padding: 50px 200px 10px 100px;
+}
+.khoi3{
+    background-color:yellow;
+}
+.khoi4{
+    background-color:grey;
+    display: flex;
+}
+
+.khoi5{
+    background-color:blue;
+    width: 50%;
+}
+.khoi6{
+    background-color:orange;
+    width: 50%;
+}
