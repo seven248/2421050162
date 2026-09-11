@@ -23,9 +23,11 @@ p.maSV{
     margin: 50px 200px 10px 100px;
     /* giống margin */
     padding: 50px 200px 10px 100px;
+    
 }
 .khoi3{
     background-color:yellow;
+    margin:auto;
 }
 .khoi4{
     background-color:grey;
@@ -40,3 +42,80 @@ p.maSV{
     background-color:orange;
     width: 50%;
 }
+.danh-muc{
+                background-color:#198cf0;
+                padding: 10px;
+            }
+            body{
+                margin:0;
+            }
+            .danh-sach-muc{
+                padding:0;
+                margin:0;
+                /* bỏ dấu chấm khi dùng ul, li */
+                list-style: none;
+                display: flex;
+                /* gap khoảng cách các đối tượng ở trong */
+                gap: 20px;
+            }
+            .lien-ket{
+                color:white;
+                /* text-decoration bỏ gạch chân thẻ a */
+                text-decoration: none;
+            }
+            .trai{
+                width: 20%;
+                height: 100vh;
+                border-right:1px solid #198cf0;
+            }
+            form{
+                width:80%;
+                margin:10px auto;
+            }
+            .khoi{
+                width:100%
+            }
+            p{
+                margin:0;
+            }
+            input{
+                width:100%
+                padding: 5px 0;
+                border-radius:5px;
+            }
+            .quen-mat-khau{
+                display: flex;
+                justify-content: flex-end;
+            }
+            .quen-mat-khau-lien-ket{
+                color:#198cf0;
+                text-decoration: none;
+            }
+            button{
+                width: 100%;
+                padding: 5px 0;
+                border-radius: 5px;
+            }
+            .login{
+                margin-bottom: 10px;
+                background-color:#2fa4e7;
+                color:white;
+                border:none;
+            }
+            .login-365{
+                background-color:#0078d4;
+                color:white;
+                border:none;
+            }
+            .phai{
+                width: 80%;
+                height: 100vh;
+            }
+            main{
+                display:flex;
+            }
+            .khoi-dang-nhap{
+                width: 100%;
+                height: 100px;
+            }
+            
