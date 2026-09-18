@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>Netflix Việt Nam</title>
+        <style>
+            body{
+                background-color: #2f2c38;
+                color:white;
+                
+            }
+            .danh-sach-muc{
+                list-style: none;
+                display: flex;
+                gap: 10px;
+                align-items:center;
+            }
+            .lien-ket-muc{
+                text-decoration: none;
+                color:#dbdbdd;
+            }
+            header{
+                display: flex;
+                justify-content: space-betwween; 
+                align-items:center;
+            }
+            .logo{
+                width: 10%;
+                padding: 0;
+            }
+            .muc{
+                padding: 15px;
+                border-radius: 25px;
+            }
+            .muc:hover{
+                background-color:gray;
+            }
+            .avatar{
+                width: 80%;
+                border-radius: 10px;
+            }
+            .banner{
+                background-color:aliceblue;
+                width: 95%;
+                margin:20px auto;
+                border-radius: 20px;
+            }
+            .anh-banner{
+                width: 100%;
+                height:auto;
+                border-radius: 10px;
+            }
+            .danh-sach-the-loai{
+                width: 95%;
+                height: 20vh;
+                margin: 20px auto;
+            }
+            .phim{
+                display: flex;
+                justify-content: space-between;
+            }
+            .phim-poster{
+                width: 24%;
+                height: 20vh;
+                border-radius:  15px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+        <nav class="danh-muc">
+            <ul class="danh-sach-muc">
+                <img class="logo" src="../anh/logo.svg" alt="Ảnh logo">
+                <li class="muc"><a href="#" class="lien-ket-muc dang-chon">Trang chủ<a></li>
+                <li class="muc"><a href="#" class="lien-ket-muc">Series<a></li>
+                <li class="muc"><a href="#" class="lien-ket-muc">Phim<a></li>
+                <li class="muc"><a href="#" class="lien-ket-muc">Nhân vật<a></li>
+                <li class="muc"><a href="#" class="lien-ket-muc">Mới & Phổ biến<a></li>
+                <li class="muc"><a href="#" class="lien-ket-muc">Netflix của tôi<a></li>
+                <li class="muc"><a href="#" class="lien-ket-muc">Duyệt tìm theo ngôn ngữ<a></li>  
+            </ul>
+        </nav>
+        <div class="chuc-nang">
+            <div class="tim-kiem"></div>
+            <div class="thong-tin">
+                <img src="../anh/avatar.jpg" class="avatar" alt="avatar">
+            </div>
+        </div>
+        </header>
+        <main>
+            <div class="banner">
+                <img class="anh-banner" src="../anh/banner.jpg">
+            </div>
+            <div class="danh-sach-the-loai">
+                <div class="ten-the-loai">
+                    <h2>Có thể bạn chưa xem</h2>
+                </div>
+                <div class="the-loai">
+                    <div class="danh-sach-phim">
+                        <div class="phim">
+                            <img src="../anh/banner.jpg" class="phim-poster"></img>
+                            <img src="../anh/banner.jpg" class="phim-poster"></img>
+                            <img src="../anh/banner.jpg" class="phim-poster"></img>
+                            <img src="../anh/banner.jpg" class="phim-poster"></img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
