@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <!-- Internal JavaScript -->
+    <script>
+        // in ra màn hình
+        document.writeln("Hello World! <br>")
+        // khai báo biến
+        var ten ="Đình Huy <br>"
+        document.writeln(ten);
+        ten ="Thu Hằng <br>"
+        document.writeln(ten);
+        var namNay = 2026;
+        document.writeln(namNay);
+        //Phép toán
+            var soThuNhat =10;
+            var soThuHai =5;
+            var ketQua =0
+             //Cộng +
+             document.write("<br> Ket qua soThu1 + soThu2 la:");
+             ketQua = soThuNhat + soThuHai;
+             document.write(ketQua);
+            //  Trừ -
+            document.write("<br> Ket qua soThu1 - soThu2 la:");
+             ketQua = soThuNhat - soThuHai;
+             document.write(ketQua);
+            //Nhân *
+            document.write("<br> Ket qua soThu1 * soThu2 la:");
+             ketQua = soThuNhat * soThuHai;
+             document.write(ketQua);
+            //Chia /
+            document.write("<br> Ket qua soThu1 / soThu2 la:");
+             ketQua = soThuNhat / soThuHai;
+             document.write(ketQua);
+            //Chia lấy dư %
+            document.writeln("<br> Ket qua soThu1 % soThu2 la:")
+             ketQua = soThuNhat % soThuHai;
+             document.write(ketQua);
+
+             //++
+             document.writeln("<br>");
+             soThuNhat++;
+             document.write(soThuNhat++);
+             document.writeln("<br>");
+             document.write(soThuNhat);
+             //--
+             document.writeln("<br>");
+             document.writeln(--soThuHai);
+
+             document.writeln("<br>");
+             soThuNhat += soThuHai;
+             document.writeln(soThuNhat);
+
+             //-=
+             document.writeln("<br>");
+             soThuNhat -= soThuHai;
+             document.writeln(soThuNhat);
+
+             
+             var ho = "Trần Thị";
+             document.writeln("<br>" + ho + " " + ten);
+             document.writeln("<br>");
+             //Đo độ dài của chuỗi
+             document.writeln(ho.length);
+             //Kiểm tra kiểu dữ liệu của biến
+             document.writeln(typeof(ho));
+
+             //
+             document.writeln("<br>");
+             var hoVaTen ="Nguyễn Đình Huy";
+             document.writeln(hoVaTen.indexOf("u"));
+
+             document.writeln("<br>");
+             document.writeln(hoVaTen.includes("H"));
+
+             document.writeln("<br>");
+             document.writeln(hoVaTen.startsWith("Nguyễn"));
+
+             document.writeln("<br>");
+             document.writeln(hoVaTen.replace("Nguyễn","Trần"));
+
+             document.writeln("<br>");
+             document.writeln(hoVaTen.toUpperCase());
+
+             document.writeln("<br>");
+             document.writeln(hoVaTen.toLocaleLowerCase());
+             
+
+    </script>
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
