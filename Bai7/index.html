@@ -42,13 +42,13 @@
              ketQua = soThuNhat % soThuHai;
              document.write(ketQua);
 
-             //++
+            //++
              document.writeln("<br>");
              soThuNhat++;
              document.write(soThuNhat++);
              document.writeln("<br>");
              document.write(soThuNhat);
-             //--
+            //--
              document.writeln("<br>");
              document.writeln(--soThuHai);
 
@@ -56,7 +56,7 @@
              soThuNhat += soThuHai;
              document.writeln(soThuNhat);
 
-             //-=
+            //-=
              document.writeln("<br>");
              soThuNhat -= soThuHai;
              document.writeln(soThuNhat);
@@ -65,12 +65,12 @@
              var ho = "Trần Thị";
              document.writeln("<br>" + ho + " " + ten);
              document.writeln("<br>");
-             //Đo độ dài của chuỗi
+            //Đo độ dài của chuỗi
              document.writeln(ho.length);
-             //Kiểm tra kiểu dữ liệu của biến
+            //Kiểm tra kiểu dữ liệu của biến
              document.writeln(typeof(ho));
 
-             //
+            //
              document.writeln("<br>");
              var hoVaTen ="Nguyễn Đình Huy";
              document.writeln(hoVaTen.indexOf("u"));
@@ -89,6 +89,110 @@
 
              document.writeln("<br>");
              document.writeln(hoVaTen.toLocaleLowerCase());
+            
+            //Date
+             var homNay = new Date();
+             document.writeln("<br>" + homNay);
+
+             var  ngay = new Date("08/05/2025");
+             document.writeln("<br>" + ngay);
+
+             var namNay = homNay.getFullYear();
+             document.writeln("<br>" + namNay);
+
+             var thangNay = homNay.getMonth() +1;
+             document.writeln("<br>" + thangNay);
+
+             var ngayNay = homNay.getDate();
+             document.writeln("<br>" + ngayNay);
+
+             var thu = homNay.getDay() +1;
+             document.writeln("<br>" + thu);
+
+             document.writeln("<br>" + "Hôm nay là thứ " + thu + " ngày " + ngayNay + " tháng " + thangNay + " năm " + namNay);
+
+            //Mảng
+             var mangSo = [1, 2, 3, 4, 5];
+             document.writeln("<br>");
+             document.writeln(mangSo[2]);
+             document.writeln("<br>" + mangSo.length);
+
+             var mangTen = ["Huy", "Hằng", "Huyền"];
+             document.writeln("<br>" + mangTen[2]);
+
+             var mang = [1, 2, 3, 4, "Huy", "Hằng", "Huyền"];
+             document.writeln("<br>" + mang[5]);
+
+             var d = mang.concat(mangSo, mangTen);
+            //
+             document.writeln("<br>" + d);
+            //Thêm kí tự vào giữa các thành phần chuỗi
+             document.writeln("<br>" + d.join("-"));
+            //
+             document.writeln("<br>" + d.pop());
+            //Thêm thành phần vào mảng
+             d.push("Sứa");
+             document.writeln("<br>" + d);
+             document.writeln("<br>" + mangSo.reverse());
+            //Object
+             var thongTinSinhVien = {
+                hoTen: "Nguyễn Đình Huy",
+                namSinh: 2006,
+                queQuan: {
+                    xaPhuong: "Lai Khê",
+                    thanhPho: "Hải Phòng",
+                }
+             };
+
+             document.writeln("<br>" + thongTinSinhVien.hoTen);
+             document.writeln("<br>" + thongTinSinhVien.queQuan.thanhPho);
+             tuoi = namNay - thongTinSinhVien.namSinh;
+             document.writeln("<br>" + tuoi);
+             thongTinSinhVien.tuoi = tuoi;
+             console.log(thongTinSinhVien);
+             //boolean: true nam/ false nữ
+             thongTinSinhVien.gioiTinh = true;
+
+             var mangThongTin = [
+                {
+                    hoTen: "Trần Thị Thu Hằng",
+                    namSinh: 2006,
+                    queQuan:{
+                        xaPhuong: "Nghĩa Lâm",
+                        tinhThanhPho: "Ninh Bình",
+                    }
+                }
+                
+             ]
+
+            //== =! > <
+            //=== so sánh cả giá trị và kiểu dữ liệu
+             var so1 = 5;
+             var so2 = 10;
+             document.writeln("<br>");
+             document.writeln(so1 == so2);
+            //&& ||
+             document.writeln("<br>");
+             if(thu >= 7 ){
+                document.writeln("Cuối tuần");
+             }
+             
+             else{
+                document.writeln("Đi học");
+             }
+             document.writeln("<br>");
+
+             //Kiểm tra số chẵn lẻ
+             var so = 24;
+             if(so % 2 == 0 ){
+                document.writeln(so + " là số chẵn");
+             }else{
+                document.writeln(so + " là số lẽ");
+             }
+
+
+            
+
              
 
     </script>
