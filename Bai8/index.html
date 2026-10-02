@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-2</title>
+</head>
+<body>
+    <script>
+        //function không tham số
+        function sayHello(){
+            document.writeln("Hello");
+        }
+
+        sayHello();
+
+        //function có tham số
+        function sayHello2(ten){
+            document.write("<br> Xin chào bạn " + ten);
+        }
+
+        sayHello2("Huy");
+        document.writeln("<br>");
+        
+        
+        function tinhTong(a, b){
+            if(isNaN(a) == false && isNaN(b) == false){
+                document.writeln(a + b);
+            }
+        }
+        var soThuNhat = prompt("Nhập số thứ nhất", "");
+        var soThuHai = prompt("Nhập số thứ hai", "");
+        tinhTong(soThuNhat, soThuHai);
+            
+    </script>
+</body>
+</html>

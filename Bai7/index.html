@@ -183,12 +183,78 @@
              document.writeln("<br>");
 
              //Kiểm tra số chẵn lẻ
-             var so = 24;
-             if(so % 2 == 0 ){
-                document.writeln(so + " là số chẵn");
-             }else{
-                document.writeln(so + " là số lẽ");
-             }
+             var so = "20000000000000001";
+             var doDai = so.length;
+             var soCuoiCung = so[doDai -1];
+             document.writeln("<br>");
+             document.writeln(soCuoiCung);
+             document.writeln("<br>");
+            if(so % 2 == 0 ){
+             document.writeln(so + " là số chẵn");
+            }else{
+             document.writeln(so + " là số lẻ");
+            }
+            document.writeln("<br>");
+            //Switch case
+            var d = new Date();
+            var theDay = d.getDay();
+            switch (theDay) {
+                case 5:
+                    document.writeln("Finally Friday");
+                    break;
+                case 6: 
+                    document.writeln("Super Saturday");
+                    break;
+                case 0: 
+                    document.writeln("Sleepy Sunday");
+                    break;
+                default: 
+                    document.writeln("I'm looking forward to this weekend");
+            }
+
+            for (var index = 1; index <= 1000; index++){
+                document.writeln("<br>");
+                document.writeln("Cảm ơn bạn số " + index);
+            }
+            // var mang = [1, 2, 3, 4, "Huy", "Hằng", "Huyền"];
+            for(var i = 0; i < mang.length; i++){
+                if(isNaN(mang[i]) == true){
+                document.writeln("<br>");
+                document.writeln("Xin chào " + mang[i]);
+                document.writeln("<br>");
+                }
+            }
+            //while
+            var i = 0;
+            while(i <= 10){
+                document.writeln("This number is " + i);
+                document.writeln("<br>");
+                i = i + 1;
+            }
+            document.writeln("<br>");
+            //do while
+            var j = 0;
+            do {
+                document.writeln("This number is " + j);
+                document.writeln("<br>");
+                j = j + 1;
+            }while (j <= 10);
+
+
+            //popup boxes
+            alert("hello");
+
+
+            var r = confirm("Bạn có muốn truy cập không")
+            if (r == true){
+                document.writeln("You pressed OK!");
+            }
+            else{
+                document.writeln("You pressed Cancel!");
+            }
+            document.writeln("<br>");
+            var r = prompt("Nhập họ và tên để truy cập", "Nhập họ tên tại đây");
+            document.writeln(r);
 
 
             
