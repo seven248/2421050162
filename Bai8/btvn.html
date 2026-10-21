@@ -8,41 +8,73 @@
 </head>
 
 <body>
+    <div>
+        Nhập điểm A: <input id="diemA" type="number">
+    </div>
+    <div>
+        Nhập điểm B: <input id="diemB" type="number">
+    </div>
+    <div>
+        Nhập điểm C: <input id="diemC" type="number">
+    </div>
+    <div>
+        <button onclick="tinhDiem()">Tính điểm</button>
+    </div>
+    <div>
+        Kết quả: <input id="ketQua" type="text">
+    </div>
+    <div>Năm sinh của thí chủ là: <input id="namSinh" type="number"></div>
+    <div> <button onclick="year">Tính tuổi</button></div>
+    <div> Tuổi của thí chủ là: <input id="tuoi" type="number"></div>
     <script>
-  
-    function diemChu(a, b, c) {
-        var tong = a * 0.6 + b * 0.3 + c * 0.1;
-        var chu;
+        function year(){
+            var namNay =new Date();
+            var a = namNay.getFullYear();
+            var b = parseIn(document.getElementById(namSinh).value);
 
-        if (tong >= 9) {
-            chu = "A+";
-        } else if (tong >= 8.5) {
-            chu = "A";
-        } else if (tong >= 8) {
-            chu = "B+";
-        } else if (tong >= 7) {
-            chu = "B";
-        } else if (tong >= 6.5) {
-            chu = "C+";
-        } else if (tong >= 5.5) {
-            chu = "C";
-        } else if (tong >= 5) {
-            chu = "D+";
-        } else if (tong >= 4) {
-            chu = "D";
-        } else {
-            chu = "F";
+            document.getElementById("tuoi").value = tinhTuoi(a, b);
+        }
+        function tinhTuoi(a, b){
+            var tuoi = a - b;
+
+            return "Tồn tại" + tuoi;
         }
 
-        return "Điểm tổng: " + tong.toFixed(2) + " → Điểm chữ: " + chu;
-    }
 
-    var a = Number(prompt("Nhập điểm A", "Nhập số ở đây"));
-    var b = Number(prompt("Nhập điểm B", "Nhập số ở đây"));
-    var c = Number(prompt("Nhập điểm C", "Nhập số ở đây"));
-    alert(diemChu(a, b, c));
-</script>
-</script>
+
+        function tinhDiem() {
+            var a = parseFloat(document.getElementById("diemA").value);
+            var b = parseFloat(document.getElementById("diemB").value);
+            var c = parseFloat(document.getElementById("diemC").value);
+
+            // document.write("Điểm A nhập vào là: "+a);
+            // document.write("<br>Điểm B nhập vào là: "+b);
+            // document.write("<br>Điểm C nhập vào là: "+c);
+
+            document.getElementById("ketQua").value = tinhDiemChu(a, b, c);
+        }
+        function tinhDiemChu(a, b, c) {
+            var tong = a * 0.6 + b * 0.3 + c * 0.1;
+            var kq = "";
+
+            if (tong >= 0 && tong < 4) {
+                kq = "F";
+            } else if (tong >= 4 && tong < 5) {
+                kq = "D";
+            } else if (tong >= 5 && tong < 7) {
+                kq = "C";
+            } else if (tong >= 7 && tong < 9) {
+                kq = "B";
+            } else if (tong >= 9 && tong <= 10) {
+                kq = "A";
+            }
+
+            return " → Điểm chữ: " + kq;
+        }
+
+
+    </script>
+    </script>
 
 </body>
 

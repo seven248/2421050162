@@ -6,7 +6,20 @@
     <title>JavaScript-2</title>
 </head>
 <body>
+    <div>
+    Nhập điểm A: <input id="diemA" type="number">
+    </div>
+    <div>
+    Nhập điểm B: <input id="diemB" type="number">
+    </div>
+    <div>
+    Nhập điểm C: <input id="diemC" type="number">
+    </div>
     <script>
+
+        var a = document.getElementById("diemA").value;
+        var a = document.getElementById("diemB").value;
+        var a = document.getElementById("diemC").value;
         //function không tham số
         function sayHello(){
             document.writeln("Hello");
@@ -31,7 +44,17 @@
         var soThuNhat = prompt("Nhập số thứ nhất", "");
         var soThuHai = prompt("Nhập số thứ hai", "");
         tinhTong(soThuNhat, soThuHai);
-            
+            //Viết hàm tính điểm chữ dựa trên 3 đầu điểm (A, B, C)
+            //tong = A*0.6 + B*0.3 +C*0.1 => Điểm chữ tương ứng
+
+            // Chuyển chuỗi thành số parselnt();     parseFloat();
+            // Chuyển số thành chuỗi
+
+
+
+
+
+        
     </script>
 </body>
 </html>
