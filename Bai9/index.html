@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 9 JvS</title>
+    <style>
+        .khung{
+            width: 100%;
+            text-align: center;
+        }
+        .anh{
+            width: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="khung">
+        <h1 class="che-do">Chế độ sáng</h1>
+        <img class="anh" src="../anh/mattroi.png">
+        <div class="chuc-nang">
+            <button onclick="doiCheDo()">Đổi chế độ</button>
+        </div>
+    </div>
+    <script>
+        // cheDo (boolean: true-sáng/false-tối)
+        var cheDo = true;
+
+        function doiCheDo(){
+            if(cheDo ==true){
+            document.getElementsByTagName("body")[0].style = "background-color: black";
+            document.getElementsByClassName("che-do")[0].style = "color: white";
+            document.getElementsByClassName("che-do")[0].innerHTML = "Chế độ tối";
+            document.getElementsByTagName("img")[0].src= "../anh/mattrang.png";
+            cheDo = false;
+        }
+        else{
+            document.getElementsByTagName("body")[0].style = "background-color: white";
+            document.getElementsByClassName("che-do")[0].style = "color: black";
+            document.getElementsByClassName("che-do")[0].innerHTML = "Chế độ sáng";
+            document.getElementsByTagName("img")[0].src= "../anh/mattroi.png";
+            cheDo = true;
+        }
+    }
+    </script>
+</body>
+
+</html>

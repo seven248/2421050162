@@ -23,22 +23,24 @@
     <div>
         Kết quả: <input id="ketQua" type="text">
     </div>
-    <div>Năm sinh của thí chủ là: <input id="namSinh" type="number"></div>
-    <div> <button onclick="year">Tính tuổi</button></div>
-    <div> Tuổi của thí chủ là: <input id="tuoi" type="number"></div>
+    <div>
+        Nhập năm sinh <input id="namSinh" type="number">
+    </div>
+    <div>
+        <button onclick="tinhTuoi()">Tính tuổi</button>
+    </div>
+    <div>
+        Tuổi của bạn là <input id="tuoi" typr="number">
+    </div>
     <script>
-        function year(){
-            var namNay =new Date();
-            var a = namNay.getFullYear();
-            var b = parseIn(document.getElementById(namSinh).value);
-
-            document.getElementById("tuoi").value = tinhTuoi(a, b);
+        function tinhTuoi() {
+            var namSinh = parseFloat(document.getElementById("namSinh").value);
+            var homNay = new Date();
+            var namNay = homNay.getFullYear();
+            tuoii = namNay - namSinh;
+            document.getElementById("tuoi").value = tuoii;
         }
-        function tinhTuoi(a, b){
-            var tuoi = a - b;
 
-            return "Tồn tại" + tuoi;
-        }
 
 
 
