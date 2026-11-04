@@ -20,15 +20,18 @@ CREATE TABLE nguoi_dung (
 	)
 
 -- the_loai
+CREATE TABLE the_loai (
 	id key AUTO_INCREMENT int,
     ten_the_loai varchar(255)
-
+)
 -- dien_vien
+CREATE TABLE dien_vien (
     id key AUTO_INCREMENT int,
     ho_ten varchar(100),
     ngay_sinh date
-
+)
 -- phim
+CREATE TABLE phim (
     id key AUTO_INCREMENT int,
     ten_phim varchar(255),
     quoc_gia varchar(100),
@@ -36,19 +39,22 @@ CREATE TABLE nguoi_dung (
     nam datetime,
     do_tuoi int,
     mo_ta varchar(255)
-
-
+)
 -- phim_the_loai
+CREATE TABLE phim_the_loai (
     id key AUTO_INCREMENT int,
     phim_id int,
     the_loai_id int
-
+)
 -- phim_dien_vien
+CREATE TABLE (
     id key AUTO_INCREMENT int,
     phim_id int,
     dien_vien_id int
-
+)
 -- dao_dien
+CREATE TABLE dao_dien (
     id key AUTO_INCREMENT int,
     ho_ten varchar(100),
     ngay_sinh date
+)
