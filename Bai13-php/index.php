@@ -55,6 +55,9 @@
             case 'dangki':
                 include 'dangki.php';
                 break;
+            case 'capnhattaikhoan':
+                include 'capnhattaikhoan.php';
+                break;
         }
     }
 ?>

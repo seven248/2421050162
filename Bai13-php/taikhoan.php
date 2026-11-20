@@ -15,7 +15,15 @@
     .dangki{
         background-color: pink;
         border: 1px solid black;
-        border-radius: 10px;
+        border-radius: 5px;
+    }
+    .capnhat{
+        background-color: green;
+        border-radius: 5px;
+    }
+    .xoa{
+        background-color: red;
+        border-radius: 5px;
     }
 </style>
 <body>
@@ -35,6 +43,7 @@
         <th>Ngày sinh</th>
         <th>Số điện thoại</th>
         <th>Giới tính</th>
+        <th>Chức năng</th>
     </tr>
     <?php
         while($row = mysqli_fetch_array($result)){
@@ -47,10 +56,15 @@
         <td><?php echo $row['ngay_sinh']?></td>
         <td><?php echo $row['so_dien_thoai']?></td>
         <td><?php echo $row['gioi_tinh']?></td>
+        <td>
+            <a class="capnhat" href="index.php?page_layout=capnhattaikhoan&id=<?php echo $row['id'] ?>">Cập nhật</a>
+            <a class="xoa" href="#">Xóa</a>
+
+        </td>
     </tr>
-</table>
 <?php
         }
 ?>
+</table>
 </body>
 </html>
